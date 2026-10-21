@@ -14,6 +14,9 @@ h2{
 }
 
 header{
+  display: flex;             /* Places the logo and text side-by-side */
+  align-items: center;       /* Centers them vertically */
+  gap: 15px;
   background-color: #0f6b68;
   color: white;
   padding: 16px 20px;
@@ -25,4 +28,78 @@ h1{
   font-size: 36px;
   margin-top: 40px;
   margin-bottom: 8px;
+}
+
+a{
+  display: inline-block;
+  background-color: #0f6b68;
+  color: white;
+  padding: 12px 24px;
+  margin: 8px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h2{
+  color: #0f6b68;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+section{
+
+  border-top: 1px solid #cfe0dd;
+  margin-top: 32px;
+}
+
+footer{
+  background-color: #e3f1ef;
+  color: #14282b;
+  margin-top: 48px;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.hero {
+  background-color: #e3f1ef;
+  padding: 48px 0;
+}
+
+.hero h1 {
+  font-size: 44px;
+  line-height: 1.15;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.secondary {
+  background-color: transparent;
+  color: #0f6b68;
+  border: 2px solid #0f6b68;
+  padding: 10px 22px;
+}
+
+section ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  padding: 0 20px;
+  margin: 0;
+}
+
+section li {
+  background-color: white;
+  border: 1px solid #cfe0dd;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.notice {
+  background-color: #fff4d6;
+  color: #5c4400;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px 16px;
 }
