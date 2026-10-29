@@ -3,52 +3,416 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Abbycare Medical Diagnostic Services</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="notice">Sample draft: details in [brackets] will be replaced with Abbycare's real information.</div>
-    <header>
-        <img src="images/abbylogo.jpeg" alt="Abbycare logo" height="44">
-        <strong><span class="highlight-text">Abbycare</span></strong>
+    <div class="notice">DISCLAIMER: THIS IS A SAMPLE DRAFT, ALL INFORMATION IN THIS DRAFT IS PUBLICY AVAILABLE AND ARE FICTIONAL TO BE REPLACED WITH REAL INFORMATION UPON DEAL AGREEMENT.</div>
+    <nav class="navbar">
+        <div class="container nav-container">
+          <a href="index.html" class="logo">
+            <img src="images/abbylogo.jpeg" alt="Abbycare logo" height="44">
+          </a>
+          <ul class="nav-links">
+            <li><a href="index.html/about">About</a></li>
+            <li class="dropdown">
+              <a href="index.html/services">Services<i class="ph ph-caret-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="index.html/services/blood-testing">Test Your Blood</a></li>
+                <li><a href="index.html/services/scan">Full Body Scan</a></li>
+                <li><a href="index.html/services/recommendation">Get The Right Recommedations Based On Your Diagnostics</a></li>
+                <li><a href="index.html/services/diagnosis">Get The Correct Diagnosis Of Your Condition</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html/assessments">Assessments</a></li>
+            <li><a href="index.html/faqs">FAQ</a></li>
+            <li><a href="index.html/contact">Contact Us</a></li>
+            <li class="dropdown">
+                    <a href="#">Account <i class="ph ph-caret-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html/login?mode=patient">Patient Login</a></li>
+                        <li><a href="index.html/login?mode=therapist">Diagnostician Login</a></li>
+                    </ul>
+            </li>
+          </ul>
+          <a href="index.html/assessment" class="btn btn-primary btn-nav">Get Started <i class="ph ph-arrow-right"></i></a>
+            
+            <button class="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <header class="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-container">
+          <div class="hero-content" data-aos="fade-right">
+            <div class="availability-badge">
+              <span class="status-dot"></span>
+              world class diagnostics equipments available
+            </div>
+
+            <h1 class="hero-title">Your health is, <span class="highlight">prioritized</span></h1>
+
+            <p class="hero-subtitle">
+              Connect with licensed diagnosticians, at affordable prices and quick results and recommendations. Abbycare is always here for you.
+            </p>
+          </div>
+
+          <div class="mood-selector">
+            <p class="selector-label">What test or scan do you need to run today?<i class="ph ph-arrow-right"></i></p>
+            <div class="mood-pills">
+              <button class="mood-pill"><span class="emoji">🌊</span> Stress Fracture</button>
+              <button class="mood-pill"><span class="emoji">🌀</span> Blood Test</button>
+              <button class="mood-pill"><span class="emoji">🔋</span> Bone Fracture</button>
+              <button class="mood-pill"><span class="emoji">🌧️</span> Pregnancy Scan</button>
+              <button class="mood-pill"><span class="emoji">🌱</span> Brain Scan</button>
+            </div>
+            <p class="selector-hint">Select what resonates and we'll help you find the right path.</p>
+          </div>
+
+          <div class="hero-actions">
+            <a href="index.html/assessment" class="btn btn-primary btn-large">Start your free assessment <i class="ph ph-arrow-right"></i></a>
+            <a href="index.html/services" class="link-action">Explore our platform <i class="ph ph-arrow-right"></i></a>
+          </div>
+          <p class="trust-text">100% confidential • Licensed diagnosticians • No card required for the check-in</p>
+        </div>
     </header>
 
-<div class="hero">
-        <h1>Abbycare Medical Diagnostic Services</h1>
-          <p>
-            Abbycare Medical Diagnostic Services serves patients in [area], Lagos.
-            Call or message us to ask about available tests, opening hours and appointments.
-          </p>
+    <section class="diagnostics-type-section">
+      <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+          <p class="section-kicker">OUR EXPERTISE</p>
+          <h2 class="section-title">Get the results you need within record time and with care.</h2>
+          <p class="section-description">At Abbycare, your comfort is a priority and we strive to make complex technical diagnosis easier for you to understand and also you don't have to wait too long to get your test result.</p>
+        </div>
+        
+        <div class="diagnostics-grid">
+          <!-- Type 1 -->
+           <div class="diagnostics-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="diagnostics-icon">
+              <i class="ph ph-brain"></i>
+            </div>
+            <h3>Brain Scan</h3>
+            <p>Get a complete scan of your brain or a paritcular type of brain scan depending on the symptoms presented.</p>
+           </div>
 
-        <a href="tel:+2340000000000">Call us</a> <a class="secondary" href="tel:+2340000000000">chat with us on WhatsApp</a>
-</div>
+          <!-- Type 2 -->
+           <div class="diagnostics-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="diagnostics-icon">
+              <i class="ph ph-brain"></i>
+            </div>
+            <h3>Blood Test</h3>
+            <p>We can test your blood based on the symptoms presented or based on your particular request of what you wanted your blood to be tested and you get the result the same day.</p>
+           </div>
 
-        <section>
-            <h2>Our services</h2>
+          <!-- Type 3-->
+           <div class="diagnostics-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="diagnostics-icon">
+              <i class="ph ph-brain"></i>
+            </div>
+            <h3>Pregnancy Scan</h3>
+            <p>Get a result on the status and condition of your featus at any stage during the pregnancy.</p>
+           </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="therapists-section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-kicker">MEET OUR TEAM</p>
+          <div class="header-with-action">
+            <h2 class="section-title">Get to know our team</h2>
+            <a href="index.html/diagnosticians" class="link-action see-all">See all diagnosticians<i class="ph ph-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-container">
+        <div class="therapist-track" id="therapistTrack">
+          <div class="therapist-card">
+            <a href="index.html/diagnostician/1" class="therapist-card-cover" arial-label="view uzodima chukwuka profile"></a>    
+            <div class="therapist-img-container">
+              <img src="images/abbycaresampleimageemployee.png" alt="Uzodima Chukwuka" style="object-fit: cover;">
+              <div class="available-badge">
+                <span class="status-dot-small" style="background: white;"></span>Available
+              </div>
+            </div>
+
+              <div class="therapist-info">
+                <h3>Uzodima Chukwuka</h3>
+                <p class="therapist-title">Neurologist Medical Lab</p>
+                <div class="therapist-rating">
+                  <i class="ph-fill ph-star"></i> <span>5.0</span>
+                </div>
+                <div class="therapist-tags">
+                   <span class="tag">Brain Scan</span>
+                   <span class="tag">Brain Degenerative Disease Diagnostics</span>
+                   <span class="tag">Excellent Neurosurgeon Recommendation</span>
+                   <a href="https://globaltellyhealth.com/therapists/35" class="btn btn-primary btn-block therapist-card-action">View profile <i class="ph ph-arrow-right"></i></a>
+                </div>
+              </div>
+          </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+          
+
+          <div class="therapist-card">
+            <a href="index.html/diagnostician/1" class="therapist-card-cover" arial-label="view uzodima chukwuka profile"></a>    
+            <div class="therapist-img-container">
+              <img src="images/abbycaresampleimageemployee.png" alt="Uzodima Chukwuka" style="object-fit: cover;">
+              <div class="available-badge">
+                <span class="status-dot-small" style="background: white;"></span>Available
+              </div>
+            </div>
+
+              <div class="therapist-info">
+                <h3>Uzodima Chukwuka</h3>
+                <p class="therapist-title">Neurologist Medical Lab</p>
+                <div class="therapist-rating">
+                  <i class="ph-fill ph-star"></i> <span>5.0</span>
+                </div>
+                <div class="therapist-tags">
+                   <span class="tag">Brain Scan</span>
+                   <span class="tag">Brain Degenerative Disease Diagnostics</span>
+                   <span class="tag">Excellent Neurosurgeon Recommendation</span>
+                   <a href="https://globaltellyhealth.com/therapists/35" class="btn btn-primary btn-block therapist-card-action">View profile <i class="ph ph-arrow-right"></i></a>
+                </div>
+              </div>
+          </div>  
+
+          <div class="therapist-card">
+            <a href="index.html/diagnostician/1" class="therapist-card-cover" arial-label="view uzodima chukwuka profile"></a>    
+            <div class="therapist-img-container">
+              <img src="images/abbycaresampleimageemployee.png" alt="Uzodima Chukwuka" style="object-fit: cover;">
+              <div class="available-badge">
+                <span class="status-dot-small" style="background: white;"></span>Available
+              </div>
+            </div>
+
+              <div class="therapist-info">
+                <h3>Uzodima Chukwuka</h3>
+                <p class="therapist-title">Neurologist Medical Lab</p>
+                <div class="therapist-rating">
+                  <i class="ph-fill ph-star"></i> <span>5.0</span>
+                </div>
+                <div class="therapist-tags">
+                   <span class="tag">Brain Scan</span>
+                   <span class="tag">Brain Degenerative Disease Diagnostics</span>
+                   <span class="tag">Excellent Neurosurgeon Recommendation</span>
+                   <a href="https://globaltellyhealth.com/therapists/35" class="btn btn-primary btn-block therapist-card-action">View profile <i class="ph ph-arrow-right"></i></a>
+                </div>
+              </div>
+          </div>  
+
+          <div class="therapist-card">
+            <a href="index.html/diagnostician/1" class="therapist-card-cover" arial-label="view uzodima chukwuka profile"></a>    
+            <div class="therapist-img-container">
+              <img src="images/abbycaresampleimageemployee.png" alt="Uzodima Chukwuka" style="object-fit: cover;">
+              <div class="available-badge">
+                <span class="status-dot-small" style="background: white;"></span>Available
+              </div>
+            </div>
+
+              <div class="therapist-info">
+                <h3>Uzodima Chukwuka</h3>
+                <p class="therapist-title">Neurologist Medical Lab</p>
+                <div class="therapist-rating">
+                  <i class="ph-fill ph-star"></i> <span>5.0</span>
+                </div>
+                <div class="therapist-tags">
+                   <span class="tag">Brain Scan</span>
+                   <span class="tag">Brain Degenerative Disease Diagnostics</span>
+                   <span class="tag">Excellent Neurosurgeon Recommendation</span>
+                   <a href="https://globaltellyhealth.com/therapists/35" class="btn btn-primary btn-block therapist-card-action">View profile <i class="ph ph-arrow-right"></i></a>
+                </div>
+              </div>
+          </div>  
+
+          <div class="therapist-card">
+            <a href="index.html/diagnostician/1" class="therapist-card-cover" arial-label="view uzodima chukwuka profile"></a>    
+            <div class="therapist-img-container">
+              <img src="images/abbycaresampleimageemployee.png" alt="Uzodima Chukwuka" style="object-fit: cover;">
+              <div class="available-badge">
+                <span class="status-dot-small" style="background: white;"></span>Available
+              </div>
+            </div>
+
+              <div class="therapist-info">
+                <h3>Uzodima Chukwuka</h3>
+                <p class="therapist-title">Neurologist Medical Lab</p>
+                <div class="therapist-rating">
+                  <i class="ph-fill ph-star"></i> <span>5.0</span>
+                </div>
+                <div class="therapist-tags">
+                   <span class="tag">Brain Scan</span>
+                   <span class="tag">Brain Degenerative Disease Diagnostics</span>
+                   <span class="tag">Excellent Neurosurgeon Recommendation</span>
+                   <a href="https://globaltellyhealth.com/therapists/35" class="btn btn-primary btn-block therapist-card-action">View profile <i class="ph ph-arrow-right"></i></a>
+                </div>
+              </div>
+          </div>   <!--Therapist card ends-->
+
+          <div class="therapist-card">
+            <a href="index.html/diagnostician/1" class="therapist-card-cover" arial-label="view uzodima chukwuka profile"></a>    
+            <div class="therapist-img-container">
+              <img src="images/abbycaresampleimageemployee.png" alt="Uzodima Chukwuka" style="object-fit: cover;">
+              <div class="available-badge">
+                <span class="status-dot-small" style="background: white;"></span>Available
+              </div>
+            </div>
+
+              <div class="therapist-info">
+                <h3>Uzodima Chukwuka</h3>
+                <p class="therapist-title">Neurologist Medical Lab</p>
+                <div class="therapist-rating">
+                  <i class="ph-fill ph-star"></i> <span>5.0</span>
+                </div>
+                <div class="therapist-tags">
+                   <span class="tag">Brain Scan</span>
+                   <span class="tag">Brain Degenerative Disease Diagnostics</span>
+                   <span class="tag">Excellent Neurosurgeon Recommendation</span>
+                   <a href="https://globaltellyhealth.com/therapists/35" class="btn btn-primary btn-block therapist-card-action">View profile <i class="ph ph-arrow-right"></i></a>
+                </div>
+              </div>
+          </div>  
+
+          <div class="therapist-card">
+            <a href="index.html/diagnostician/1" class="therapist-card-cover" arial-label="view uzodima chukwuka profile"></a>    
+            <div class="therapist-img-container">
+              <img src="images/abbycaresampleimageemployee.png" alt="Uzodima Chukwuka" style="object-fit: cover;">
+              <div class="available-badge">
+                <span class="status-dot-small" style="background: white;"></span>Available
+              </div>
+            </div>
+
+              <div class="therapist-info">
+                <h3>Uzodima Chukwuka</h3>
+                <p class="therapist-title">Neurologist Medical Lab</p>
+                <div class="therapist-rating">
+                  <i class="ph-fill ph-star"></i> <span>5.0</span>
+                </div>
+                <div class="therapist-tags">
+                   <span class="tag">Brain Scan</span>
+                   <span class="tag">Brain Degenerative Disease Diagnostics</span>
+                   <span class="tag">Excellent Neurosurgeon Recommendation</span>
+                   <a href="https://globaltellyhealth.com/therapists/35" class="btn btn-primary btn-block therapist-card-action">View profile <i class="ph ph-arrow-right"></i></a>
+                </div>
+              </div>
+          </div>  
+
+          <div class="therapist-card">
+            <a href="index.html/diagnostician/1" class="therapist-card-cover" arial-label="view uzodima chukwuka profile"></a>    
+            <div class="therapist-img-container">
+              <img src="images/abbycaresampleimageemployee.png" alt="Uzodima Chukwuka" style="object-fit: cover;">
+              <div class="available-badge">
+                <span class="status-dot-small" style="background: white;"></span>Available
+              </div>
+            </div>
+
+              <div class="therapist-info">
+                <h3>Uzodima Chukwuka</h3>
+                <p class="therapist-title">Neurologist Medical Lab</p>
+                <div class="therapist-rating">
+                  <i class="ph-fill ph-star"></i> <span>5.0</span>
+                </div>
+                <div class="therapist-tags">
+                   <span class="tag">Brain Scan</span>
+                   <span class="tag">Brain Degenerative Disease Diagnostics</span>
+                   <span class="tag">Excellent Neurosurgeon Recommendation</span>
+                   <a href="https://globaltellyhealth.com/therapists/35" class="btn btn-primary btn-block therapist-card-action">View profile <i class="ph ph-arrow-right"></i></a>
+                </div>
+              </div>
+          </div>  
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner-section">
+      <div class="container">
+        <div class="cta-banner-card" data-aos="zoom-in">
+          <p class="cta-kicker">YOUR ONE STOP FOR ALL TYPES OF DIAGNOSTICS</p>
+          <h2 class="cta-title">Your healing is one<br>call away.</h2>
+          <p class="cta-subtitle">Get in touch with us<br>tell us what you need - and we deliver.</p>
+
+          <div class="cta-actions">
+            <a href="index.html/contact/phone" class="btn btn-primary cta-btn">Call us on mobile 080123212122 <i class="ph ph-arrow-circle-right"></i></a>
+            <a href="index.html/contact/email" class="btn btn-outline cta-btn-outline">Or send us an email <i class="ph ph-arrow-right"></i></a>
+          </div>
+
+          <p class="cta-footer-note">The safety of your personal information is of high priority.</p>
+        </div>
+      </div>
+    </section>
+
+  <footer class="site-footer-large">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/abbylogo.jpeg" alt="abbycare logo" class="footer-logo">
+          <p class="footer-brand-text">Get the expert diagnostics you require with the latest technology.</p>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-heading">Products</h4>
+          <ul>
+            <li><a href="index.html/assessment">Assessment</a></li>
+            <li><a href="index.html/faq">FAQ</a></li>
+            <li><a href="index.html/stress-fracture">Stress Fracture Scan</a></li>
+            <li><a href="index.html/brain-scan">Brain Scan</a></li>
+            <li><a href="index.html/pregnancy-scan">Pregnancy Scan</a></li>
+            <li><a href="index.html/blood-test">Blood Test</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-heading">Featured Links</h4>
+          <ul>
+            <li><a href="index.html/about-us">About Us</a></li>
+            <li><a href="index.html/blog">Blog</a></li>
+            <li><a href="index.html/videos">Videos</a></li>
+            <li><a href="index.html/equipments">Laboratory Equipments</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+            <h4 class="footer-heading">Contact Us</h4>
             <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>Curabitur scelerisque risus vel ultricies bibendum.</li>
-            <li>Maecenas suscipit quam vel sapien congue, euismod mollis nisi tempor.</li>
+              <li class="contact-item">Phone: 08000000123</li>
+              <li class="contact-item"><a href="mailto:support@abbycare.com" class="footer-email">support@abbycare.com</a></li>
             </ul>
-        </section>
+        </div>
+      </div>
 
-        <section>
-            <h2>About Abbycare</h2>
-            <p>[Two or three sentences from the owner: when the centre opened, who it serves, and what patients can expect when they visit.]</p>
-        </section>
+      <div class="footer-bottom-bar">
+        <div class="footer-social-section">
+          <span class="follow-us-text">Follow us</span>
+            <div class="social-icons">
+              <a href="#"><i class="ph ph-instagram-logo"></i></a>
+              <a href="#"><i class="ph ph-youtube-logo"></i></a>
+              <a href="#"><i class="ph ph-facebook-logo"></i></a>
+              <a href="#"><i class="ph ph-tiktok-logo"></i></a>
+              <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+              <a href="#"><i class="ph ph-twitter-logo"></i></a>
+            </div>
+        </div>
+      </div>
 
-
-  <section>
-    <h2>Visit or contact us</h2>
-    <p>Address: Donec quis elit hendrerit nibh finibus laoreet, Lagos</p>
-    <p>Opening hours: [Days: and Time:]</p>
-    <p>Phone: +2340000000000</p>
-    <p>WhatsApp: +2340000000000</p>
-        <a href="https://www.google.com/maps/search/?api=1&query=Abbycare+Medical+Diagnostic+Services+Lagos" target="_blank">Get directions</a>
-  </section>
-
-  <footer>
-    © 2026 Abbycare Medical Diagnostic Services, Lagos, Nigeria.
+      <div class="footer-copyright-bar">
+        <p>&copy; 2026 Abbycare Diagnostics Powered by <a href="godwined.com" target="_blank" rel="noopener noreferrer" style="color: #10B981; text-decoration: none;">Godwin Edeh</a></p>
+          <div class="footer-legal-links">
+            <a href="index.html/terms">Terms</a>
+            <a href="index.html/privacy">Privacy</a>
+            <a href="index.html/cookies">Cookies</a>
+          </div>
+      </div>
+    </div>
   </footer>
 
 </body>
