@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Clone all cards and append them to the track to create a seamless infinite scroll
         const cards = Array.from(track.children);
         cards.forEach(card => {
-            const clone = card.cloneNode(true);
+            const clone = card.cloneNode(true); 
             track.appendChild(clone);
         });
     }
